@@ -4,8 +4,8 @@ const ctx = canvas.getContext("2d");
 const Fw = 1080;
 const Fh = 1350;
 
-canvas.width = Fw;
-canvas.height = Fh;
+canvas.width = 675;
+canvas.height = 675;
 
 let img = new Image();
 let poster = new Image();
@@ -16,8 +16,8 @@ let scale = 1;
 let minScale = 1;
 let maxScale = 3;
 
-let x = 0;
-let y = 0;
+let x = 202.5;
+let y = 337.5;
 
 let isDragging = false;
 let startX, startY;
