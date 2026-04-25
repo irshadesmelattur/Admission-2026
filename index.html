@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poster Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Poster Generator</h2>
+
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="text" id="class" placeholder="Enter Class">
+  <input type="file" id="imageInput" accept="image/*">
+
+  <canvas id="canvas"></canvas>
+
+  <div class="buttons">
+    <div class="row">
+      <button onclick="setMode('fill')">Fill</button>
+      <button onclick="setMode('auto')">Auto</button>
+      <button onclick="setMode('width')">Width</button>
+      <button onclick="setMode('height')">Height</button>
+    </div>
+    <div class="row">
+      <button onclick="resetImage()">Reset</button>
+      <button onclick="downloadImage()">Download</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
